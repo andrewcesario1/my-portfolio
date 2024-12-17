@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/andrewcesario1/my-portfolio/static/css/main.9295332d.css",
+    "main.js": "/andrewcesario1/my-portfolio/static/js/main.c015dcff.js",
+    "index.html": "/andrewcesario1/my-portfolio/index.html",
+    "main.9295332d.css.map": "/andrewcesario1/my-portfolio/static/css/main.9295332d.css.map",
+    "main.c015dcff.js.map": "/andrewcesario1/my-portfolio/static/js/main.c015dcff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9295332d.css",
+    "static/js/main.c015dcff.js"
+  ]
+}
