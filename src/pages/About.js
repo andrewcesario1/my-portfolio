@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./styles/About.css";
 
 const About = () => {
   return (
@@ -8,13 +8,13 @@ const About = () => {
         <h1>About Me</h1>
         <div className="about-description">
           <p>
-            Hello! My name is <strong>Andrew</strong>, and I'm a passionate developer with a background in creating modern and responsive websites. I hold a degree in Computer Science and have a strong interest in web development, problem-solving, and user experience design.
+            Hello! My name is <strong>Andrew</strong>, and I'm a passionate developer with a background creating programs, websites and games. I am in progress for a Degree in Computer Science at California State University of Fullerton and have a strong interest in Game Development and solving challenging problems.
           </p>
           <p>
-            I enjoy working with technologies like <strong>React, JavaScript, HTML, CSS, and Node.js</strong>. In addition to web development, I am interested in learning new technologies, contributing to open-source projects, and collaborating with others to solve real-world challenges.
+            I enjoy working with technologies like <strong>React, JavaScript, HTML, CSS, and Node.js</strong> for web development and <strong>C++, C#, Python, Unity, Unreal Enginge</strong> for game and desktop app development.
           </p>
           <p>
-            Outside of programming, I love <strong>gaming, hiking, and photography</strong>. These hobbies help me stay creative and balanced.
+            Outside of programming, I love <strong>gaming, eating, and sleeping</strong>. These hobbies help me stay creative and balanced.
           </p>
         </div>
 

@@ -1,5 +1,6 @@
 import React from "react";
-import "./Home.css";
+import { Typewriter } from "react-simple-typewriter";
+import "./styles/Home.css";
 
 const Home = () => {
   return (
@@ -8,10 +9,23 @@ const Home = () => {
         <div className="intro-text">
           <h1>Hi, I'm Andrew!</h1>
           <p>
-            A passionate developer building modern, responsive, and dynamic
-            websites to showcase skills and creativity.
+            A Computer Science Major at CSUF, here is my portfolio showcasing everything about me and my career.
           </p>
-          <p className="tagline">"Crafting ideas into reality."</p>
+          <p className="tagline">
+            <Typewriter
+              words={[
+                "Crafting ideas into reality.",
+                "Turning concepts into code.",
+                "Developing for the future.",
+              ]}
+              loop={Infinity}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </p>
         </div>
         <div className="intro-image">
           <img

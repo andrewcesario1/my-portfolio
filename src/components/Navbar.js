@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="nav-brand">My Portfolio</div>
+      <div className="nav-brand">Andrew's Portfolio</div>
 
       {/* Menu Toggle Button */}
       <div className="nav-toggle" onClick={toggleMenu}>
