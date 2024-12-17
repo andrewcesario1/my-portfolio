@@ -1,0 +1,82 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #004080; /* Rich Blue Color */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Navbar Brand */
+.nav-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f8f9fa; /* Light Greyish White */
+  letter-spacing: 1px;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f8f9fa; /* Light Greyish White */
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #004080; /* Blue hover text */
+  background-color: #f8f9fa; /* Light background on hover */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Menu Toggle Button */
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #f8f9fa; /* Light Greyish White */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Attach to Navbar */
+    left: 0;
+    background-color: #004080; /* Consistent blue background */
+    width: 100%;
+    display: none;
+    padding: 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links a {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-links a:hover {
+    background-color: #f8f9fa;
+    color: #004080;
+  }
+}
