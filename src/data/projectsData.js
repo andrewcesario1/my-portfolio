@@ -1,4 +1,13 @@
-const projectsData = [
+const getImagePath = (fileName) => {
+    // Use process.env.PUBLIC_URL and test both jpg and JPG
+    const basePath = `${process.env.PUBLIC_URL}/projectImages/`;
+    return [
+      `${basePath}${fileName}.jpg`,
+      `${basePath}${fileName}.JPG`
+    ];
+  };
+  
+  const projectsData = [
     {
       id: 1,
       title: "Pixel Jackpot",
@@ -7,14 +16,14 @@ const projectsData = [
       technologies: ["Unity", "C#", "Pixel Art"],
       details: "This game combines engaging casino gameplay with retro pixel art visuals.",
       images: [
-        `${process.env.PUBLIC_URL}/projectImages/pixel1.jpg`,
-        `${process.env.PUBLIC_URL}/projectImages/pixel2.jpg`,
-        `${process.env.PUBLIC_URL}/projectImages/pixel3.jpg`,
-        `${process.env.PUBLIC_URL}/projectImages/pixel4.jpg`,
-        `${process.env.PUBLIC_URL}/projectImages/pixel5.jpg`,
-        `${process.env.PUBLIC_URL}/projectImages/pixel6.jpg`,
+        ...getImagePath("pixel1"),
+        ...getImagePath("pixel2"),
+        ...getImagePath("pixel3"),
+        ...getImagePath("pixel4"),
+        ...getImagePath("pixel5"),
+        ...getImagePath("pixel6"),
       ],
-      link: "https://play.unity.com/en/games/1872c98a-c89f-4805-b80f-324ab9f2b133/pixel-jackpot"
+      link: "https://play.unity.com/en/games/1872c98a-c89f-4805-b80f-324ab9f2b133/pixel-jackpot",
     },
     {
       id: 2,
@@ -24,14 +33,14 @@ const projectsData = [
       technologies: ["React", "Node.js", "CSS"],
       details:
         "Pinchr helps users efficiently plan and monitor their savings and budgets in an intuitive interface.",
-        images: [
-            `${process.env.PUBLIC_URL}/projectImages/pinchr1.jpg`,
-            `${process.env.PUBLIC_URL}/projectImages/pinchr2.jpg`,
-            `${process.env.PUBLIC_URL}/projectImages/pinchr3.jpg`,
-            `${process.env.PUBLIC_URL}/projectImages/pinchr4.jpg`,
-            `${process.env.PUBLIC_URL}/projectImages/pinchr5.jpg`,
-          ],
-          link: "https://github.com/andrewcesario1/ProjectPinchr"
+      images: [
+        ...getImagePath("pinchr1"),
+        ...getImagePath("pinchr2"),
+        ...getImagePath("pinchr3"),
+        ...getImagePath("pinchr4"),
+        ...getImagePath("pinchr5"),
+      ],
+      link: "https://github.com/andrewcesario1/ProjectPinchr",
     },
     {
       id: 3,
@@ -39,13 +48,14 @@ const projectsData = [
       description:
         "A multiplayer Tic-Tac-Toe game you can play online with friends in real time.",
       technologies: ["React", "Socket.io", "Node.js"],
-      details: "This project offers seamless multiplayer Tic-Tac-Toe gameplay with real-time updates.",
+      details:
+        "This project offers seamless multiplayer Tic-Tac-Toe gameplay with real-time updates.",
       images: [
-        `${process.env.PUBLIC_URL}/projectImages/tictactoe1.jpg`,
-        `${process.env.PUBLIC_URL}/projectImages/tictactoe2.jpg`,
-        `${process.env.PUBLIC_URL}/projectImages/tictactoe3.jpg`,
+        ...getImagePath("tictactoe1"),
+        ...getImagePath("tictactoe2"),
+        ...getImagePath("tictactoe3"),
       ],
-      link: "https://github.com/camwolff02/CS4B-TicTacToe"
+      link: "https://github.com/camwolff02/CS4B-TicTacToe",
     },
   ];
   
